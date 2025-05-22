@@ -1,4 +1,4 @@
-public class Imovel{
+public abstract class Imovel{
     private  Double area;
     private  int qntQuartos;
     private  Double precoCompra;
@@ -33,6 +33,5 @@ public class Imovel{
     public Double getPrecoCompra(){
         return this.precoCompra;
     }
-
-   
+    public abstract Double PrecoVenda();
 }

@@ -15,11 +15,11 @@ public class Apartamento extends Imovel{
         return this.piscina;
     }
 
-    public Double ValorImovel(Double area, Boolean piscina){
-        if (area > 30 && piscina){
-            return this.getPrecoCompra() * 0.5;
+    public Double PrecoVenda(){
+        if (getArea > 300 && piscina){
+            return getPrecoCompra() * 0.5;
         } else {
-            return this.getPrecoCompra() * 0.1;
+            return getPrecoCompra() * 0.1;
         }
     }
 }
